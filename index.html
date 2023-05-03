@@ -16,13 +16,13 @@
   <body>
     <div id="app">
       <div id="product-image">
-        <button id="btn-360">
+        <button id="btn-360" onclick="toggle()">
           <img
             src="./assets/360.svg"
             alt="Clique no botão para animar o sofá"
           />
         </button>
-        <button id="btn-close">
+        <button id="btn-close" onclick="toggle()">
           <img src="./assets/close.svg" alt="Parar de animar o sofá" />
         </button>
 
@@ -36,5 +36,10 @@
         <button>ADICIONAR À CESTA</button>
       </div>
     </div>
+    <script>
+      function toggle() {
+        document.documentElement.classList.toggle("animated");
+      }
+    </script>
   </body>
 </html>
